@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/contactinfo icon.jpeg">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Contacts</title>
+</head>
+
+<body>
+
+    <div class="container-fluid px-5">
+        <div class="row">
+            <div class="col-lg-4 py-5 px-3">
+                <div class="form-inputs vh-100 bg-light d-flex justify-content-center align-items-center">
+                    <div class="content d-flex justify-content-center align-items-center flex-column">
+                        <input type="text" id="contactName" class="form-control my-2" placeholder="enter your name"
+                            autocomplete="off">
+                        <div id="nameAlert" class="alert alert-danger d-none">name should be from 2-15 characters....
+                        </div>
+
+                        <input type="text" id="contactAge" class="form-control my-2" placeholder="enter your age"
+                            autocomplete="off">
+                        <div id="ageAlert" class="alert alert-danger d-none">age should be from 10-80 characters....
+                        </div>
+
+                        <input type="text" id="contactPhone" class="form-control my-2" placeholder="enter your phone"
+                            autocomplete="off">
+                        <div id="phoneAlert" class="alert alert-danger d-none">ex: 010********</div>
+
+                        <button id="submitBtn" class="btn btn-primary my-2" disabled>Add Contact</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 py-5 px-3">
+                <div class="data-display bg-light text-center p-3 overflow-hidden">
+                    <input type="text" placeholder="search by name" class="form-control my-4 text-center w-75 m-auto "
+                        id="search" autocomplete="off">
+                    <div class="header d-flex justify-content-start align-items-center my-3">
+                        <span><img src="images/phone-book-contacts-svgrepo-com.svg" class="img-fluid" /></span>
+                        <p class="contactHead text-secondary">Contacts List: </p>
+                    </div>
+                    <table class="table table-striped">
+                        <thead>
+                            <th></th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Phone</th>
+                            <th></th>
+                            <th></th>
+                        </thead>
+                        <tbody id="tableBody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
